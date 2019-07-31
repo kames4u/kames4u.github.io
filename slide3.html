@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="index.js"></script>
+    <script src="slide3.js"></script>
     <style>
         .navbar {
             margin-bottom: 6px;
@@ -20,7 +20,7 @@
         }
 
         circle {
-            fill: black;
+            fill: brown;
             stroke: white;
         }
 
@@ -100,7 +100,15 @@
 
                     <div class="col-sm-6 text-center">
                         <div id="tooltip"></div>
-                        <svg width="450" height="450"></svg>
+                        <svg width="450" height="300"></svg>
+                        <div class="row content">
+                        <div class="col-sm-2"> </div>
+                        <div class="col-sm-6 text-center">
+                            <span>Select Fuel Type: </span>
+                            <select id="fuel"></select>
+                        </div>
+                        <div class="col-sm-2"> </div>
+                    </div>
                     </div>
 
                     <div class="col-sm-3">
