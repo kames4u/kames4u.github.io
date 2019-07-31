@@ -8,7 +8,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="slide1.js"></script>
+  <!-- Load d3-annotation -->
+<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+
+  <script src="slide2.js"></script>
   <style>
     .navbar {
       margin-bottom: 6px;
@@ -20,17 +23,10 @@
     }
 
     circle {
-      fill: yellowgreen;
+      fill: gold;
       stroke: white;
     }
 
-    #tooltip {
-      opacity: 0;
-      position: absolute;
-      text-align: center;
-      background: greenyellow;
-      border: 0px;
-    }
   </style>
 </head>
 
@@ -91,7 +87,6 @@
                   <button id="btnSlide1" type="button" class="btn btn-secondary" onclick="location.href='slide1.html';">1</button>
                   <button id="btnSlide2" type="button" class="btn btn-primary">2</button>
                   <button id="btnSlide3" type="button" class="btn btn-secondary" onclick="location.href='slide3.html';">3</button>
-                  <button id="btnSlide4" type="button" class="btn btn-secondary" onclick="location.href='slide4.html';">4</button>
                 </div>
               </div>
             </div>
@@ -99,7 +94,6 @@
           </div>
 
           <div class="col-sm-6 text-center">
-            <div id="tooltip"></div>
             <svg width="450" height="450"></svg>
           </div>
 

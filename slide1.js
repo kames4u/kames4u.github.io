@@ -14,7 +14,9 @@
         .range([200, 0])
         .base(10);
 
-      var tooltip = d3.select("#tooltip");
+      var tooltip = d3.select("#tooltip")
+      .style("left", "200px")
+      .style("top", "10px");
 
       d3.select("svg")
         .append("g")
