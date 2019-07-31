@@ -37,9 +37,14 @@
           })
         .on("mouseover", function (d, i) {
           tooltip.style("opacity", 1)
+            .style("left", "200px")
+            .style("top", "10px")
             .html("Make: " + d.Make + " ----" +
               " Avg_Higway_MPG: " + d.AverageHighwayMPG + " ---- " +
               " Avg_City_MPG: " + d.AverageCityMPG);
+        })
+        .on("mouseout",function (d, i) {
+            tooltip.style("opacity", 0);
         });
 
       d3.select("svg")
