@@ -37,8 +37,6 @@
           })
         .on("mouseover", function (d, i) {
           tooltip.style("opacity", 1)
-            .style("left", 20 + logScaleX(+d.AverageCityMPG) + "px")
-            .style("top", 20 + logScaleY(+d.AverageHighwayMPG) + "px")
             .html("Make: " + d.Make + " ----" +
               " Avg_Higway_MPG: " + d.AverageHighwayMPG + " ---- " +
               " Avg_City_MPG: " + d.AverageCityMPG);
