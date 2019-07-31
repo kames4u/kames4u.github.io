@@ -19,6 +19,23 @@
       d3.select("svg")
         .append("g")
         .attr("transform", "translate(50,50)")
+        .call(
+          d3.axisLeft(logScaleY)
+          .tickValues(tickValueAxis)
+          .tickFormat(d3.format("~s"))
+        );
+
+      d3.select("svg")
+        .append("g")
+        .attr("transform", "translate(50,250)")
+        .call(d3.axisBottom(logScaleX)
+          .tickValues(tickValueAxis)
+          .tickFormat(d3.format("~s"))
+        );
+        
+      d3.select("svg")
+        .append("g")
+        .attr("transform", "translate(50,50)")
         .selectAll("circle")
         .data(data)
         .enter()
@@ -47,21 +64,5 @@
             tooltip.style("opacity", 0);
         });
 
-      d3.select("svg")
-        .append("g")
-        .attr("transform", "translate(50,50)")
-        .call(
-          d3.axisLeft(logScaleY)
-          .tickValues(tickValueAxis)
-          .tickFormat(d3.format("~s"))
-        );
-
-      d3.select("svg")
-        .append("g")
-        .attr("transform", "translate(50,250)")
-        .call(d3.axisBottom(logScaleX)
-          .tickValues(tickValueAxis)
-          .tickFormat(d3.format("~s"))
-        );
 
     }
