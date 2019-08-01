@@ -1,0 +1,26 @@
+.navbar {
+    margin-bottom: 6px;
+    border-radius: 6px;
+  }
+
+  .row.content {
+    height: 450px;
+  }
+
+  circle {
+    fill: green;
+    stroke: white;
+  }
+
+  #tooltip {
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    background-color: lightblue;
+    color: blue;
+    border: 0px;
+  }
+  .li {
+    padding: 5px;  
+    margin: 0;
+}
