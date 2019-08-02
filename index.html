@@ -15,7 +15,7 @@
         $(document).ready(function () {
                 $('.carousel').carousel({
                   wrap: false,
-                  interval:300
+                  interval:4000
                 })
               });
         </script>
@@ -61,26 +61,37 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="04.jpg" alt="Los Angeles" />
+            <img src="green.jpg" alt="Slide1" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Los Angeles</h5>
-              <p>
-                Something somethine whatever this may be something will happen
-                to something on the day of Monday
+              <strong><span class="slide1">Slide 1</span></strong>
+              <p class="slide1">
+                Scatterplot dipicting the fuel efficiency of all the car manufactors. 
+                Hovering over the datapoints will reveal the details as tooltip.
               </p>
             </div>
           </div>
 
           <div class="item">
-            <img src="02.jpg" alt="Chicago" />
+            <img src="yellow.jpg" alt="Slide2" />
             <div class="carousel-caption d-none d-md-block">
-                <h5>Chicago</h5>
-                <p>
+                <strong><span class="slide2">Slide 2</span></strong>
+                <p class="slide2">
+                  Scatterplot dipicting annotation for high, medium and low fuel effficient category between Gasolein, Electric and Disel varient.
+                </p>
+              </div>
+          </div>
+
+          <div class="item">
+            <img src="brown.jpg" alt="Slide3" />
+            <div class="carousel-caption d-none d-md-block">
+                <strong><span class="slide3">Slide 3</span></strong>
+                <p class="slide3">
                   Something somethine whatever this may be something will happen
                   to something on the day of Monday
                 </p>
@@ -88,16 +99,12 @@
           </div>
 
           <div class="item">
-            <img src="03.jpg" alt="New york" />
-            <div class="carousel-caption d-none d-md-block">
-                <h5>New york</h5>
-                <p>
-                  Something somethine whatever this may be something will happen
-                  to something on the day of Monday
-                </p>
-                <input type="button" class="btn btn-primary" onclick="location.href='slide1.html';" value="Start" />
-              </div>
-          </div>
+              <img src="white.jpg" alt="begin" />
+              <div class="carousel-caption d-none d-md-block">
+                  <input type="button" class="btn btn-primary" onclick="location.href='slide1.html';" value="BEGIN" />
+                  <br>
+                  </div>
+            </div>
         </div>
 
         <!-- Left and right controls -->
